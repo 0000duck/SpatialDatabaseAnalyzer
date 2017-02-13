@@ -52,7 +52,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jtfFilename">
       <Properties>
-        <Property name="text" type="java.lang.String" value="E:\u005c\u005cUTA\u005c\u005cResearch\u005c\u005cSpatialAnalyzer\u005c\u005cdatabase\u005c\u005cspatial-db.sqlite" containsInvalidXMLChars="true"/>
+        <Property name="text" type="java.lang.String" value="E:\u005c\u005cUTA\u005cResearch\u005c\u005cGit\u005c\u005cSpatialDatabaseAnalyzer\u005c\u005cdatabases\u005c\u005cTarrant.sqlite" containsInvalidXMLChars="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="getRoads">

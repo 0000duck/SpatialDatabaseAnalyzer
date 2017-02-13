@@ -24,7 +24,8 @@ public class DbConnectionUi extends javax.swing.JPanel {
     }
 
     private void getRoads() {
-        String query = "select *, ST_ASTEXT(a.Geometry) from tl_2016_48439_roads  a limit 100";
+        
+        String query = "select *, ST_ASTEXT(a.Geometry) from TarrantRoads  a limit 100";
         Date d1 = new Date();
         SqliteSession session = Dao.getSession(jtfFilename.getText());
         List<Road> roads = session.getRoads(query);
@@ -48,7 +49,7 @@ public class DbConnectionUi extends javax.swing.JPanel {
 
         jLabel1.setText("DB file (*.sqlite)");
 
-        jtfFilename.setText("E:\\\\UTA\\\\Research\\\\SpatialAnalyzer\\\\database\\\\spatial-db.sqlite");
+        jtfFilename.setText("E:\\\\UTA\\Research\\\\Git\\\\SpatialDatabaseAnalyzer\\\\databases\\\\Tarrant.sqlite");
 
         getRoads.setText("Get roads");
         getRoads.addActionListener(new java.awt.event.ActionListener() {
